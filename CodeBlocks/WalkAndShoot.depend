@@ -1,0 +1,96 @@
+# depslib dependency file v1.0
+1366634242 source:/home/michel/Coding/SDL/WalkAndShoot/Bullet.cpp
+	"Bullet.hpp"
+
+1366582609 /home/michel/Coding/SDL/WalkAndShoot/Bullet.hpp
+	"GameObject.hpp"
+
+1366635110 /home/michel/Coding/SDL/WalkAndShoot/GameObject.hpp
+	<SDL/SDL.h>
+	"Vector2D.hpp"
+
+1366633582 /home/michel/Coding/SDL/WalkAndShoot/Vector2D.hpp
+	<math.h>
+
+1366637696 source:/home/michel/Coding/SDL/WalkAndShoot/GameObject.cpp
+	"GameObject.hpp"
+
+1366634356 source:/home/michel/Coding/SDL/WalkAndShoot/main.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<string>
+	"Player.hpp"
+	"Bullet.hpp"
+
+1366498198 /home/michel/Coding/SDL/WalkAndShoot/Player.hpp
+	"GameObject.hpp"
+	<string>
+
+1366637532 source:/home/michel/Coding/SDL/WalkAndShoot/Player.cpp
+	"Player.hpp"
+
+1366633745 source:/home/michel/Coding/SDL/WalkAndShoot/Vector2D.cpp
+	"Vector2D.hpp"
+
+1366653556 source:/home/michel/Coding/SDL/WalkAndShoot/src/Bullet.cpp
+	"Bullet.hpp"
+	"Player.hpp"
+
+1366652666 /home/michel/Coding/SDL/WalkAndShoot/include/Bullet.hpp
+	"GameObject.hpp"
+
+1366635110 /home/michel/Coding/SDL/WalkAndShoot/include/GameObject.hpp
+	<SDL/SDL.h>
+	"Vector2D.hpp"
+
+1366633582 /home/michel/Coding/SDL/WalkAndShoot/include/Vector2D.hpp
+	<math.h>
+
+1366651942 /home/michel/Coding/SDL/WalkAndShoot/include/Player.hpp
+	"GameObject.hpp"
+	<string>
+
+1366653894 source:/home/michel/Coding/SDL/WalkAndShoot/src/BulletManager.cpp
+	"BulletManager.hpp"
+	"Player.hpp"
+	"Bullet.hpp"
+
+1366652805 /home/michel/Coding/SDL/WalkAndShoot/include/BulletManager.hpp
+	<vector>
+	<SDL/SDL.h>
+
+1366650533 source:/home/michel/Coding/SDL/WalkAndShoot/src/Game.cpp
+	"Game.hpp"
+
+1366649758 /home/michel/Coding/SDL/WalkAndShoot/include/Game.hpp
+	<SDL/SDL.h>
+	"InGameState.hpp"
+
+1366653352 /home/michel/Coding/SDL/WalkAndShoot/include/InGameState.hpp
+	"IGameState.hpp"
+	<vector>
+	<string>
+
+1366649801 /home/michel/Coding/SDL/WalkAndShoot/include/IGameState.hpp
+	<SDL/SDL.h>
+
+1366637696 source:/home/michel/Coding/SDL/WalkAndShoot/src/GameObject.cpp
+	"GameObject.hpp"
+
+1366653646 source:/home/michel/Coding/SDL/WalkAndShoot/src/InGameState.cpp
+	"InGameState.hpp"
+	"Player.hpp"
+	"BulletManager.hpp"
+	<SDL/SDL_image.h>
+
+1366650156 source:/home/michel/Coding/SDL/WalkAndShoot/src/main.cpp
+	"Game.hpp"
+
+1366650441 source:/home/michel/Coding/SDL/WalkAndShoot/src/Player.cpp
+	"Player.hpp"
+
+1366633745 source:/home/michel/Coding/SDL/WalkAndShoot/src/Vector2D.cpp
+	"Vector2D.hpp"
+

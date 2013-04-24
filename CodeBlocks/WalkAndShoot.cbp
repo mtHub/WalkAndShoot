@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="WalkAndShoot" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/CodeBlocks/Debug/WalkAndShoot" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin/CodeBlocks/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-w" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="SDL_image" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/CodeBlocks/Release/WalkAndShoot" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin/CodeBlocks/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="SDL_image" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`sdl-config --cflags`" />
+			<Add directory="../include" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl-config --libs`" />
+		</Linker>
+		<Unit filename="../include/Bullet.hpp" />
+		<Unit filename="../include/BulletManager.hpp" />
+		<Unit filename="../include/Game.hpp" />
+		<Unit filename="../include/GameObject.h" />
+		<Unit filename="../include/GameObject.hpp" />
+		<Unit filename="../include/IGameState.hpp" />
+		<Unit filename="../include/InGameState.hpp" />
+		<Unit filename="../include/Player.hpp" />
+		<Unit filename="../include/Vector2D.hpp" />
+		<Unit filename="../src/Bullet.cpp" />
+		<Unit filename="../src/BulletManager.cpp" />
+		<Unit filename="../src/Game.cpp" />
+		<Unit filename="../src/GameObject.cpp" />
+		<Unit filename="../src/InGameState.cpp" />
+		<Unit filename="../src/Player.cpp" />
+		<Unit filename="../src/Vector2D.cpp" />
+		<Unit filename="../src/main.cpp" />
+		<Unit filename="ToDo" />
+		<Unit filename="cb.bmp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
