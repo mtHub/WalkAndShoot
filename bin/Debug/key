@@ -1,0 +1,77 @@
+     // check for keypresses
+            case SDL_KEYDOWN:
+                {
+                    /* Player 01 */
+                    switch (event.key.keysym.sym)
+                    {
+                    case SDLK_w:
+                        michel.goUp = true;
+                        michel.goDown = false;
+                        break;
+                    case SDLK_s:
+                        michel.goDown = true;
+                        michel.goUp = false;
+                        break;
+                    case SDLK_a:
+                        michel.goLeft = true;
+                        michel.goRight = false;
+                        break;
+                    case SDLK_d:
+                        michel.goRight = true;
+                        michel.goLeft = false;
+                        break;
+                    }
+
+                    /* Player 02 */
+                    switch (event.key.keysym.sym)
+                    {
+                    case SDLK_UP:
+                        amelie.goUp = true;
+                        amelie.goDown = false;
+                        break;
+                    case SDLK_DOWN:
+                        amelie.goDown = true;
+                        amelie.goUp = false;
+                        break;
+                    case SDLK_LEFT:
+                        amelie.goLeft = true;
+                        amelie.goRight = false;
+                        break;
+                    case SDLK_RIGHT:
+                        amelie.goRight = true;
+                        amelie.goLeft = false;
+                        break;
+                    }
+                }
+            case SDL_KEYUP:
+                {
+                    switch (event.key.keysym.sym)
+                    {
+                    /* Player 01 */
+                    switch (event.key.keysym.sym)
+                    {
+                    case SDLK_w:
+                        michel.goUp = false;
+                    case SDLK_s:
+                        michel.goDown = false;
+                    case SDLK_a:
+                        michel.goLeft = false;
+                    case SDLK_d:
+                        michel.goRight = false;
+                    }
+
+                    /* Player 02 */
+                    switch (event.key.keysym.sym)
+                    {
+                    case SDLK_UP:
+                        amelie.goUp = false;
+                    case SDLK_DOWN:
+                        amelie.goDown = false;
+                    case SDLK_LEFT:
+                        amelie.goLeft = false;
+                    case SDLK_RIGHT:
+                        amelie.goRight = false;
+                    }
+                    }
+                }
+            } // end switch

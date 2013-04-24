@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="WalkAndShoot" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/WalkAndShoot" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-w" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="SDL_image" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/WalkAndShoot" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="SDL_image" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`sdl-config --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl-config --libs`" />
+		</Linker>
+		<Unit filename="Bullet.cpp" />
+		<Unit filename="Bullet.hpp" />
+		<Unit filename="BulletManager.cpp" />
+		<Unit filename="BulletManager.hpp" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.hpp" />
+		<Unit filename="GameObject.cpp" />
+		<Unit filename="GameObject.hpp" />
+		<Unit filename="IGameState.hpp" />
+		<Unit filename="InGameState.cpp" />
+		<Unit filename="InGameState.hpp" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.hpp" />
+		<Unit filename="ToDo" />
+		<Unit filename="Vector2D.cpp" />
+		<Unit filename="Vector2D.hpp" />
+		<Unit filename="cb.bmp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
